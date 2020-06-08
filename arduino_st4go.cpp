@@ -23,7 +23,7 @@
   The full GNU General Public License is included in this distribution in the
   file called LICENSE.
 *******************************************************************************/
-
+#include "ardust4driver.h"
 #include "arduino_st4go.h"
 
 #include "indicom.h"
@@ -73,7 +73,7 @@ std::unique_ptr<ArduinoST4> arduinoST4(new ArduinoST4());
 double guiderr =2;
 double trrate = 0.00417808; //86164 sekund na 360stopni
 
-double sltr = 26.06; //ile razy szybciej slew niÂ¿ track 26.2
+double sltr = 26.06; //ile razy szybciej slew ni¿ track 26.2
 double slewrate = sltr*trrate ;
 double gotorate = sltr*trrate ;
 double finerate = sltr*trrate ;
